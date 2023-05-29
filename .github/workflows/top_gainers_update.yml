@@ -38,4 +38,10 @@ jobs:
       env:
         REPO_KEY: ${{secrets.GITHUB_TOKEN}}
         username: github-actions
+    - name: Cache R packages 
+      if: runner.os != 'Windows' 
+      uses: actions/cache@v1 
+      with: 
+         path: ${{ env.R_LIBS_USER }} 
+         key: ${{ runner.os }}-r-${{ matrix.config.r }}-${{ hashFiles('DESCRIPTION') }}
 
