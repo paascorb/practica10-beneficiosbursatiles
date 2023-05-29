@@ -1,4 +1,4 @@
-company_name,hih,low,last_price,prev_close,change,percent_gain
+company_name,high,low,last_price,prev_close,change,percent_gain
 Mahindra Life,442.35,410.05,440.05,406.25,33.8,8.32
 ICICI Lombard ,"1,255.70","1,176.10","1,190.95","1,099.95",91,8.27
 Engineers India,113.45,105.00,110.70,104.70,6,5.73
